@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+/* force scrollbar, prevents initial gap */
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* ---- grid ---- */
+
+.grid {
+    width: 100%;
+}
+
+/* clear fix */
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- .element-item ---- */
+
+/* 5 columns, percentage width */
+
+.grid-item {
+    float: left;
+    width: 100%;
+    height: auto;
+
+}
+
+.grid-item img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}

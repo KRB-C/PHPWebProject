@@ -1,0 +1,324 @@
+/* color palette
+#00A6FB
+#003554
+#051923
+ghostwhite
+*/
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: ghostwhite;
+}
+
+
+#pills-customer,
+#pills-reservation,
+#pills-ordDetail,
+#pills-product,
+#pills-feedback,
+#pills-admin {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+h2,
+h3,
+h4,
+    {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    background-color: #00A6FB;
+}
+
+.h3font {
+    font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.pfont {
+    font-family: 'Cormorant Infant', serif;
+    font-size: 1.4em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+nav a {
+    color: gray;
+}
+
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.45) 15%, rgba(0, 0, 0, 0)), url("../Images/bg-header2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 0;
+    /*removes rounded corners of jumbotron*/
+    height: 100vh;
+    margin: 0;
+    position: relative;
+
+}
+
+.jumbotron img {
+    margin-bottom: 10px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 35%;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 75px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 15%;
+    text-align: center;
+}
+
+.jumbotron p {
+    margin-bottom: 10px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 10%;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Roboto Slab', serif;
+}
+
+#fadein {
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+
+
+.navbar-brand {
+    margin-right: 50px;
+}
+
+#logoName {
+    font-family: 'Great Vibes', cursive;
+}
+
+.navbar-dark {
+    background-color: #003554 !important;
+}
+
+.navbar ul li {
+    margin: 0px 35px 0px 35px;
+}
+
+.navbar ul li :hover {
+    color: white !important;
+}
+
+
+.bgmain-color {
+    background-color: #003554;
+}
+
+.media-img {
+    width: 250px;
+}
+
+.index-mediatxt {
+    line-height: 150%;
+}
+
+.curveborder {
+    border: 2px solid #00A6FB;
+    border-radius: 30px;
+}
+
+.footer {
+    background-color: #051923;
+}
+
+
+.menu-name {
+    color: black;
+    font-size: 24px;
+}
+
+.dev-main h1 {
+    color: black;
+    padding-top: 65px
+}
+
+.devtxt {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.devName {
+    font-size: 24px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.devDesc {
+    font-size: 18px;
+}
+
+.blur {
+
+    -webkit-filter: blur(1.5px);
+    -moz-filter: blur(1.5px);
+    -o-filter: blur(1.5px);
+    -ms-filter: blur(1.5px);
+    filter: blur(1.5px);
+    z-index: 1;
+}
+
+.login-bg {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.80) 30%, rgba(0, 0, 0, 0)), url("../Images/bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.login-main {
+    margin: 0;
+    position: relative;
+}
+
+.login-container {
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+}
+
+.login-container h1 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.login-form {
+    height: auto;
+    max-width: 400px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    border-radius: 35px;
+    padding: 35px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.20) 15%, rgba(0, 0, 0, 0));
+}
+
+.login-form a p:hover {
+    color: #00A6FB;
+}
+
+.login-btn {
+    text-align: center;
+}
+
+.loginLogoname {
+    font-size: 50px;
+    padding-top: 10px;
+    color: white;
+}
+
+.home {
+    text-decoration: none;
+}
+
+
+.foot-txt {
+    padding: 5px;
+    font-size: 12px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: deepskyblue;
+    outline: 1px solid deepskyblue;
+}
+
+
+@media (min-width:768px) {
+    body {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 725px;
+    }
+    .jumbotron {
+        position: relative;
+    }
+    .jumbotron h1 {
+        font-size: 90px;
+        margin-bottom: 0px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        bottom: 15%;
+    }
+    .index-mediatxt {
+        line-height: 200%;
+    }
+    .blockquote {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .devtxt {
+        padding-top: 70px;
+        padding-bottom: 15px;
+        margin: 0;
+        color: white;
+    }
+    .devName {
+        font-size: 22px;
+        padding-top: 5px;
+    }
+    .devDesc {
+        font-size: 16px;
+        margin: 0
+    }
+
+    .login-container {
+        bottom: 25%;
+    }
+    .foot-txt {
+        padding-top: 15px;
+        font-size: 14px;
+    }
+}

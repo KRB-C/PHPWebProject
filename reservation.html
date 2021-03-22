@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>D Corporate</title>
+    <link rel="StyleSheet" href="CSS/bootstrap.min.css" type="text/css">
+    <link rel="StyleSheet" href="CSS/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="header">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Images/Icons/Logo.svg" width="30" height="30" alt="">
+                    <span id="logoName">D Corporate</span>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <div class="container-fluid">
+                <div class="row mx-2">
+                    <div class="col-md-12 col-sm-12 text-center my-5">
+                        <h3 class="h3font display-4">Reservation</h3>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <form class="form-inline" method="post" action="reserve.php">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control w-100" id="fname" placeholder="First Name" name="fname" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control w-100" id="lname" placeholder="Last Name" name="lname" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 my-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control w-100" id="address" placeholder="Address" name="addr" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 mb-3">
+                            <div class="form-group">
+                                <input type="email" class="form-control w-100" id="email" placeholder="Email Address" name="email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <input type="tel" class="form-control w-100" id="contact" placeholder="Contact Number" name="contact" required>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="form-group">
+                                <label class="mr-3" for="eventform">Event</label>
+                                <select class="form-control w-50" id="eventform" name="event" required>
+                                 <option hidden></option>
+                                 <option value="Birthday">Birthday</option>
+                                 <option value="Wedding">Wedding</option>
+                                 <option value="Corporate">Corporate</option>
+                                 <option value="Private">Private</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="form-group">
+                                <label class="mr-2" for="date">Date</label>
+                                <input type="date" class="form-control" id="date" placeholder="Date" name="inputdate" required>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="form-group">
+                                <label class="mr-2" for="attendees">Number of guests </label><input id="attendees" type="number" min="50" max="250" step="5" value="50" name="numguest" />
+                            </div>
+                        </div>
+                        <div class=" col-md-3 col-sm-12 ">
+                            <div class="form-group ">
+                                <label class="mr-3" for="priceform ">Pricing Per Plate</label>
+                                <select class="form-control " id="priceform" name="price" onchange="changeFunc()" required>
+                                 <option hidden></option>
+                                 <option value="280">Php 280</option>
+                                 <option value="300">Php 300</option>
+                                 <option value="350">Php 350</option>
+                                 <option value="380">Php 380</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-6 col-sm-12 ">
+                            <div class="form-group my-2 ">
+                                <select class="form-control w-100 " id="chickenform" name="chicken" disabled required>
+                                 <option hidden>Chicken Dishes</option>
+                                 <option value="1">Cordon Bleu</option>
+                                 <option value="2">Buffalo Wings</option>
+                                 <option value="3">Chicken Tenders</option>
+                                 <option value="4">Chicken Ala King</option>
+                                 <option value="5">Garlic Chicken</option>
+                                 <option value="6">Lemon Chicken</option>
+                                 <option value="7">Chicken Pastel w/ Crust</option>
+                                 <option value="8">Chicken Nuggets</option>
+                                 <option value="9">Chicken Pandan</option>
+                                 <option value="10">Chicken Galantina</option>
+                                </select>
+                            </div>
+                            <div class="form-group my-2 ">
+                                <select class="form-control w-100 " id="porkform" name="pork" disabled required>
+                                 <option hidden>Pork Dishes</option>
+                                 <option value="11">Garlic Pork Spare Ribs</option>
+                                 <option value="12">Grilled Spare Ribs</option>
+                                 <option value="13">Humba</option>
+                                 <option value="14">Spicy Pork</option>
+                                 <option value="15">Pork Broccoli</option>
+                                 <option value="16">Pork Tonkatsu</option>
+                                 <option value="17">Korean Pork Stew</option>
+                                 <option value="18">Pata Hamonado</option>
+                                 <option value="19">Mongolian Pork</option>
+                                 <option value="20">Chicken Galantina</option>
+                                </select>
+                            </div>
+                            <div class="form-group my-2 ">
+                                <select class="form-control w-100 " id="beefform" name="beef" disabled required>
+                                 <option hidden>Beef Dishes</option>
+                                 <option value="21">Beef Tempanyaki</option>
+                                 <option value="22">Beef Stroganoff</option>
+                                 <option value="23">Beef Kare-Kare</option>
+                                 <option value="24">Chili Con Carne</option>
+                                 <option value="25">Beef Mechado</option>
+                                 <option value="26">Beef Broccoli</option>
+                                 <option value="27">Callos</option>
+                                 <option value="28">Beef Caldereta</option>
+                                 <option value="29">Beef Teriyaki</option>
+                                 <option value="30">Salpicao</option>
+                                </select>
+                            </div>
+                            <div class="form-group my-2 ">
+                                <select class="form-control w-100 " id="pastavegform" name="pastaveg" disabled required>
+                                 <option hidden>Pasta and Veggies</option>
+                                 <option value="31">Baked Mac</option>
+                                 <option value="32">Lasagna</option>
+                                 <option value="33">Palaboc</option>
+                                 <option value="34">Garden Salad</option>
+                                 <option value="35">Caesar Salad</option>
+                                 <option value="36">Carbonara</option>
+                                 <option value="37">Seafood Pasta</option>
+                                 <option value="38">Pansit Canton</option>
+                                 <option value="39">Lumpiang Ubod</option>
+                                 <option value="40">Tri-color Pasta</option>
+                                </select>
+                            </div>
+                            <div class="form-group my-2 ">
+                                <select class="form-control w-100 " id="dessertform" name="dessert" disabled required>
+                                 <option hidden>Merienda and Desserts</option>
+                                 <option value="41">Empanada</option>
+                                 <option value="42">Siomai</option>
+                                 <option value="43">Buko Salad</option>
+                                 <option value="44">Coffee Jelly</option>
+                                 <option value="45">Biko</option>
+                                 <option value="46">Maja Blanca</option>
+                                 <option value="47">Ube Halaya</option>
+                                 <option value="48">Sopas</option>
+                                 <option value="49">Dumpling</option>
+                                 <option value="50">Lumpiang Shanghai</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-3 col-md-6 col-sm-12 "></div>
+                        <button id="aboutButton " type="submit" class="btn btn-outline-primary mx-auto my-4 ">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer navbar-static-bottom ">
+            <div class="foot-txt text-white text-center font-weight-light ">
+                <p>©2018 D'Corporate Catering Services. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="JS/disableSelect.js"></script>
+    <script src="JS/jquery-3.3.1.min.js "></script>
+    <script src="JS/popper.min.js "></script>
+    <script src="JS/bootstrap.min.js "></script>
+
+</body>
+
+</html>
